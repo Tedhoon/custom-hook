@@ -2,7 +2,7 @@
 > from nomadcoders.co
 
 
-- [ ] useTitle
+- [x] useTitle
 - [x] useInput
 - [ ] usePageLeave
 - [ ] useClick
