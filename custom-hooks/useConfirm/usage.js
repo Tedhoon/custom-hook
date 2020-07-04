@@ -1,10 +1,12 @@
 import React from "react";
 
 const useConfirm = (message = "", onConfirm, onCancel) => {
-  if (onConfirm && typeof onConfirm !== "function") {
+  if (!onConfirm || typeof onConfirm !== "function") {
+    // onConfirm은 무조건 받고 함수여야한다.
     return;
   }
   if (onCancel && typeof onCancel !== "function") {
+    // onCancel은 없어도 되고, 만약 있으면 funtion이어야 한다.
     return;
   }
   const confirmAction = () => {
