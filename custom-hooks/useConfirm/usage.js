@@ -1,17 +1,20 @@
 import React from "react";
 
-const useConfirm = (message = "", callback, rejection) => {
-  if (typeof callback !== "function") {
+const useConfirm = (message = "", onConfirm, onCancel) => {
+  if (onConfirm && typeof onConfirm !== "function") {
+    return;
+  }
+  if (onCancel && typeof onCancel !== "function") {
     return;
   }
   const confirmAction = () => {
     if (confirm(message)) {
-      callback();
+      onConfirm();
     } else {
-      rejection();
+      onCancel();
     }
   };
-  return confirmAction;
+  return confirmAction; //이런식으로 안의 함수를 return 해줘야 onClick시 실행
 };
 function App() {
   const deleteSomthin = () => console.log("지워져 벌임..");
