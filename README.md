@@ -5,6 +5,7 @@
 - [x] useTabs
 - [x] useClick
 - [x] useConfirm
+- [x] usePreventLeave
 - [ ] usePageLeave
 - [ ] useFadeIn
 - [ ] useFullScreen
@@ -12,7 +13,6 @@
 - [ ] useNetwork
 - [ ] useNotification
 - [ ] useScroll
-- [ ] usePreventLeave
 - [ ] useAxios
 
 
