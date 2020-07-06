@@ -7,7 +7,7 @@
 - [x] useConfirm
 - [x] usePreventLeave
 - [x] useBeforLeave
-- [ ] useFadeIn
+- [x] useFadeIn
 - [ ] useFullScreen
 - [ ] useHover
 - [ ] useNetwork
